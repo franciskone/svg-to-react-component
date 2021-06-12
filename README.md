@@ -1,5 +1,5 @@
 # SVG to React Component
-This repo is built on top of [SVGR](https://react-svgr.com/) and allows you to convert svg file to React components
+This repo uses [SVGR](https://react-svgr.com/) and allows you to convert svg file to React components
 
 ## Setup
 

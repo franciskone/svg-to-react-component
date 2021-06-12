@@ -22,7 +22,10 @@ The components will be created in the `components` folder
 
 ## Customise the output
 ### `svgr.config.js`
-In this file you can customise the [SVGR options](https://react-svgr.com/docs/options/)
+In this file you can customise the [SVGR options](https://react-svgr.com/docs/options/). Here you can specify
+- Which props you want to add to the SVG tag
+- Which values in the svg file you want to replace and the new values to use
+- A lot more... (you can find more info in the [SVGR docs](https://react-svgr.com/docs/options/))
 
 ### `.prettierrc`
 The script uses prettier, so you can just add rules here to modify the output

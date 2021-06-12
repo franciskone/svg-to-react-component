@@ -9,7 +9,7 @@ This repo uses [SVGR](https://react-svgr.com/) and allows you to convert svg fil
 - ```bash
   yarn setup
   ```
-- put your svgs in the svg folder
+- put your svgs in the `svg` folder
 
 ## Run script
 ```bash

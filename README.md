@@ -3,13 +3,15 @@ This repo uses [SVGR](https://react-svgr.com/) and allows you to convert svg fil
 
 ## Setup
 
-- ```bash
+1. Install dependencies
+```bash
   yarn
-  ```
-- ```bash
-  yarn setup - creates svg (input) and components (ouput) folders
-  ```
-- put your svgs in the `svg` folder
+```
+2. Create svg (input) and components (ouput) folders
+```bash
+  yarn setup
+```
+3. Put your svgs in the `svg` folder
 
 ## Run script
 ```bash

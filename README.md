@@ -7,7 +7,7 @@ This repo uses [SVGR](https://react-svgr.com/) and allows you to convert svg fil
   yarn
   ```
 - ```bash
-  yarn setup
+  yarn setup - creates svg (input) and components (ouput) folders
   ```
 - put your svgs in the `svg` folder
 

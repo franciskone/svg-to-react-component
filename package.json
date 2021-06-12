@@ -1,0 +1,14 @@
+{
+  "name": "svg-to-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@svgr/cli": "^5.5.0",
+    "@svgr/core": "^5.5.0"
+  },
+  "scripts": {
+    "setup": "mkdir svg && mkdir components",
+    "build:svg": "svgr svg/ --out-dir components --template template.js --index-template indexTemplate.js --prettier-config .prettierrc"
+  }
+}

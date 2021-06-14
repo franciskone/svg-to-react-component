@@ -9,6 +9,7 @@
   },
   "scripts": {
     "setup": "mkdir svg && mkdir components",
-    "build:svg": "svgr svg/ --out-dir components --template template.js --index-template indexTemplate.js --prettier-config .prettierrc"
+    "build:svgxs": "svgr svgxs/ --out-dir components --template template.js --index-template indexTemplate.js --prettier-config .prettierrc --config-file svgr.xs.config.js",
+    "build:svgsm": "svgr svgsm/ --out-dir components --template template.js --index-template indexTemplate.js --prettier-config .prettierrc --config-file svgr.sm.config.js"
   }
 }

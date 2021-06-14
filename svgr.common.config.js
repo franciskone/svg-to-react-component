@@ -1,7 +1,7 @@
 // custom template
 // https://github.com/gregberge/svgr/issues/264
 module.exports = {
-  ext: 'tsx',
+  dimensions: false,
   expandProps: false,
   typescript: true,
   prettier: true,
@@ -10,9 +10,6 @@ module.exports = {
   },
   svgProps: {
     color: '{color}',
-    width: '{size}',
-    height: '{size}',
-    viewBox: '0 0 24 24'
   },
   outDir: 'output',
 }

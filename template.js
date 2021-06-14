@@ -11,14 +11,12 @@ function template(
   const typeName = `${realName}Props`
   const typeScriptTpl = template.smart({ plugins })
   return typeScriptTpl.ast`import React from 'react'
-import type { FC } from 'react'
 ${'\n'}
 type ${typeName} = {
   color: string
-  size: string
 }
 ${'\n'}
-export const ${realName}: FC<${typeName}> = ({color, size}) => ${jsx}
+export const ${realName} = ({ color }: ${typeName} ) => ${jsx}
   `
 }
 

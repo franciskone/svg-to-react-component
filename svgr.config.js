@@ -10,6 +10,8 @@ module.exports = {
   },
   svgProps: {
     color: '{color}',
+    width: '{size}',
+    height: '{size}'
   },
   outDir: 'output',
 }

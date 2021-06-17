@@ -4,7 +4,7 @@ module.exports = {
   dimensions: false,
   expandProps: false,
   typescript: true,
-  prettier: true,
+  prettier: false,
   replaceAttrValues: {
     '#003357': 'currentColor',
     '#fff': 'transparent',
@@ -16,16 +16,16 @@ module.exports = {
   },
   outDir: 'output',
   plugins: ['@svgr/plugin-jsx'],
-  jsx: {
-    babelConfig: {
-      plugins: [
-        [
-          '@svgr/babel-plugin-replace-jsx-attribute-value',
-          {
-            values: [{ value: '2x', newValue: 'strokeWidth', literal: true }],
-          },
-        ],
-      ],
-    },
-  },
+  // jsx: {
+  //   babelConfig: {
+  //     plugins: [
+  //       [
+  //         '@svgr/babel-plugin-replace-jsx-attribute-value',
+  //         {
+  //           values: [{ value: 2, newValue: 'strokeWidth', literal: true }],
+  //         },
+  //       ],
+  //     ],
+  //   },
+  // },
 }

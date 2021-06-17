@@ -12,7 +12,20 @@ module.exports = {
   svgProps: {
     color: '{color}',
     width: '{size}',
-    height: '{size}'
+    height: '{size}',
   },
   outDir: 'output',
+  plugins: ['@svgr/plugin-jsx'],
+  jsx: {
+    babelConfig: {
+      plugins: [
+        [
+          '@svgr/babel-plugin-replace-jsx-attribute-value',
+          {
+            values: [{ value: '2x', newValue: 'strokeWidth', literal: true }],
+          },
+        ],
+      ],
+    },
+  },
 }

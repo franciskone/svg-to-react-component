@@ -12,7 +12,7 @@ function template(
   return typeScriptTpl.ast`import React from 'react'
   import type { FunctionalIconSvgProps } from '../FunctionalIcon'
 ${'\n'}
-export const ${realName} = ({ color, size }: FunctionalIconSvgProps ) => ${jsx}
+export const ${realName} = ({ color, size, strokeWidth }: FunctionalIconSvgProps ) => ${jsx}
   `
 }
 

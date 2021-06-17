@@ -7,6 +7,7 @@ module.exports = {
   prettier: false,
   replaceAttrValues: {
     '#003357': 'currentColor',
+    'white': 'transparent',
     '#fff': 'transparent',
   },
   svgProps: {

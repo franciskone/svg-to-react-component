@@ -7,12 +7,12 @@ function template(
   if (opts.typescript) {
     plugins.push('typescript')
   }
-  const realName = componentName.name.replace('Svg', '') + ': FC<React.SVGProps<SVGSVGElement>>'
+  const realName = componentName.name.replace('Svg', '')
   const typeScriptTpl = template.smart({ plugins })
   return typeScriptTpl.ast`import React from 'react'
-import type { FC } from 'react'
+  import type { FunctionalIconSvgProps } from '../FunctionalIcon'
 ${'\n'}
-export const ${realName} = ({color}) => ${jsx}
+export const ${realName} = ({ color, size }: FunctionalIconSvgProps ) => ${jsx}
   `
 }
 
